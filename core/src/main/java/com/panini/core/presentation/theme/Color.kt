@@ -1,4 +1,4 @@
-package com.panini.delicious.ui.theme
+package com.panini.core.presentation.theme
 
 import androidx.compose.ui.graphics.Color
 
