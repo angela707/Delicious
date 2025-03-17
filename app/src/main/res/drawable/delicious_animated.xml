@@ -3,6 +3,6 @@
     android:drawable="@drawable/ic_delicious">
 
     <target
-        android:name="vector"
-        android:animation="@animator/fade_in_animator" />
+        android:name="animationGroup"
+        android:animation="@animator/spin_logo" />
 </animated-vector>
