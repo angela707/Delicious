@@ -1,4 +1,4 @@
-import com.panini.convention.addUiLayerDependencies
+import com.panini.convention.addFeatureLayerDependencies
 import com.panini.convention.getPluginId
 import org.gradle.api.Plugin
 import org.gradle.api.Project
@@ -13,7 +13,7 @@ class AndroidFeatureUiConventionPlugin : Plugin<Project> {
             }
 
             dependencies {
-                addUiLayerDependencies(target)
+                addFeatureLayerDependencies(target)
             }
         }
     }
