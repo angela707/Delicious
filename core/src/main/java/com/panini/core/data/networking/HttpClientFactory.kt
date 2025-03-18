@@ -35,7 +35,7 @@ class HttpClientFactory {
             }
             defaultRequest {
                 contentType(ContentType.Application.Json)
-                header("x-rapidapi-host", "tasty.p.rapidapi.com")
+                header("x-rapidapi-host", BuildConfig.API_HOST)
                 header("x-rapidapi-key", BuildConfig.API_KEY)
             }
         }

@@ -50,6 +50,7 @@ internal fun Project.configureBuildTypes(
 
 private fun BuildType.configureDebugBuildType(apiKey: String) {
     buildConfigField("String", "API_KEY", "\"$apiKey\"")
+    buildConfigField("String", "API_HOST", "\"tasty.p.rapidapi.com\"")
     buildConfigField("String", "BASE_URL", "\"https://tasty.p.rapidapi.com\"")
 }
 
@@ -58,6 +59,7 @@ private fun BuildType.configureReleaseBuildType(
     apiKey: String
 ) {
     buildConfigField("String", "API_KEY", "\"$apiKey\"")
+    buildConfigField("String", "API_HOST", "\"tasty.p.rapidapi.com\"")
     buildConfigField("String", "BASE_URL", "\"https://tasty.p.rapidapi.com\"")
 
     isMinifyEnabled = true
