@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.delicious.android.feature.ui)
+    alias(libs.plugins.delicious.jvm.ktor)
 }
 
 android {

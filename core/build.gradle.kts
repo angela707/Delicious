@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.delicious.android.library.compose)
-
+    alias(libs.plugins.delicious.jvm.ktor)
+    alias(libs.plugins.delicious.android.room)
 }
 
 android {
@@ -8,6 +9,8 @@ android {
 }
 
 dependencies {
+    implementation(libs.bundles.koin)
+
     implementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(platform(libs.androidx.compose.bom))
 
