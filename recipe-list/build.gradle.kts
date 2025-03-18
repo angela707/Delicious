@@ -5,6 +5,12 @@ plugins {
 
 android {
     namespace = "com.panini.recipe_list"
+
+    testOptions.unitTests.apply {
+        all {
+            it.useJUnitPlatform()
+        }
+    }
 }
 
 dependencies {
@@ -13,7 +19,14 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
+
     testImplementation(libs.junit)
+    testImplementation(libs.bundles.jupiter.test)
+    testImplementation(libs.kotlinx.test.coroutine)
+    testImplementation(libs.kotlin.test)
+    testImplementation(libs.cash.turbine)
+    testImplementation(libs.mockk)
+
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }

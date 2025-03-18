@@ -6,6 +6,12 @@ plugins {
 
 android {
     namespace = "com.panini.core"
+
+    testOptions.unitTests.apply {
+        all {
+            it.useJUnitPlatform()
+        }
+    }
 }
 
 dependencies {
@@ -20,4 +26,12 @@ dependencies {
     implementation(libs.androidx.compose.ui.tooling.preview)
     debugImplementation(libs.androidx.compose.ui.tooling)
     api(libs.androidx.compose.material3)
+
+    testImplementation(libs.junit)
+    testImplementation(libs.bundles.jupiter.test)
+    testImplementation(libs.kotlinx.test.coroutine)
+    testImplementation(libs.kotlin.test)
+    testImplementation(libs.cash.turbine)
+    testImplementation(libs.mockk)
+
 }
