@@ -9,13 +9,13 @@ import androidx.compose.ui.Modifier
 
 @Composable
 fun RecipeDetailScreen(
-    details: String
+    recipeId: Int,
 ) {
     Box(
         modifier = Modifier
             .fillMaxSize(),
         contentAlignment = Alignment.Center
     ) {
-        Text("IN RECIPE DETAILS $details")
+        Text("IN RECIPE DETAILS ${recipeId}")
     }
 }

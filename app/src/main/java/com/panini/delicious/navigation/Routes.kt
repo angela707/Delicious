@@ -11,5 +11,5 @@ sealed class Routes {
     data object RecipeList : Routes()
 
     @Serializable
-    data class RecipeDetails(val details: String) : Routes()
+    data class RecipeDetails(val recipeId: Int) : Routes()
 }

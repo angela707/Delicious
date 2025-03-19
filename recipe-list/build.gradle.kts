@@ -19,6 +19,7 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
+    implementation(libs.compose.coil)
 
     testImplementation(libs.junit)
     testImplementation(libs.bundles.jupiter.test)

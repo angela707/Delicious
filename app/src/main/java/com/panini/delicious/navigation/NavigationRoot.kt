@@ -28,15 +28,15 @@ private fun NavGraphBuilder.recipeGraph(navController: NavHostController) {
     ) {
         composable<Routes.RecipeList> {
             RecipeListScreen(
-                onButtonClicked = { string ->
-                    navController.navigate(Routes.RecipeDetails(details = string))
+                onClick = { recipeId ->
+                    navController.navigate(Routes.RecipeDetails(recipeId = recipeId))
                 }
             )
         }
         composable<Routes.RecipeDetails> {
             val args = it.toRoute<Routes.RecipeDetails>()
             RecipeDetailScreen(
-                details = args.details
+                recipeId = args.recipeId
             )
         }
     }
