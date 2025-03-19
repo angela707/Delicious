@@ -10,7 +10,7 @@
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/delicious.git
+   git clone https://github.com/angela707/delicious.git
 2. **Open the project** in Android Studio.
 3. **Set up API Key and Host**:
    - Obtain your API credentials.
