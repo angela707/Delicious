@@ -14,8 +14,7 @@ android {
 dependencies {
     //modules
     implementation(projects.core)
-    implementation(projects.recipeList)
-    implementation(projects.recipeDetail)
+    implementation(projects.recipe)
 
     //core
     implementation(libs.androidx.core.ktx)

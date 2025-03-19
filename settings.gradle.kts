@@ -25,5 +25,4 @@ enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 rootProject.name = "Delicious"
 include(":app")
 include(":core")
-include(":recipe-list")
-include(":recipe-detail")
+include(":recipe")

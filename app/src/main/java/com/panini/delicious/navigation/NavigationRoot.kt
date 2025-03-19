@@ -7,8 +7,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navigation
 import com.panini.core.presentation.navigation.Routes
-import com.panini.recipe_detail.presentation.RecipeDetailScreen
-import com.panini.recipe_list.presentation.RecipeListScreen
+import com.panini.recipe.presentation.recipe_details.RecipeDetailScreen
+import com.panini.recipe.presentation.recipe_list.RecipeListScreen
 
 @Composable
 fun NavigationRoot(

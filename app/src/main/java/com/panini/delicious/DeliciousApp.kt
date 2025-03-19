@@ -3,8 +3,8 @@ package com.panini.delicious
 import android.app.Application
 import com.panini.core.di.coreDataModule
 import com.panini.delicious.di.appModule
-import com.panini.recipe_detail.di.recipeDetailsModule
-import com.panini.recipe_list.di.recipesModule
+import com.panini.recipe.di.recipeViewModelModule
+import com.panini.recipe.di.recipesModule
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.SupervisorJob
 import org.koin.android.ext.koin.androidContext
@@ -28,7 +28,7 @@ class DeliciousApp : Application() {
                 appModule,
                 coreDataModule,
                 recipesModule,
-                recipeDetailsModule
+                recipeViewModelModule
             )
         }
     }
