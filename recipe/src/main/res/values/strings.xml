@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="prep_time">Prep time: %s min</string>
+</resources>
