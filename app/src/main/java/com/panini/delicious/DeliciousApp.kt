@@ -3,6 +3,7 @@ package com.panini.delicious
 import android.app.Application
 import com.panini.core.di.coreDataModule
 import com.panini.delicious.di.appModule
+import com.panini.recipe_detail.di.recipeDetailsModule
 import com.panini.recipe_list.di.recipesModule
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.SupervisorJob
@@ -26,7 +27,8 @@ class DeliciousApp : Application() {
             modules(
                 appModule,
                 coreDataModule,
-                recipesModule
+                recipesModule,
+                recipeDetailsModule
             )
         }
     }

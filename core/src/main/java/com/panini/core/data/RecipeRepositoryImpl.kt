@@ -1,4 +1,4 @@
-package com.panini.core.data.remote
+package com.panini.core.data
 
 import com.panini.core.domain.LocalRecipeDataSource
 import com.panini.core.domain.Recipe
@@ -31,5 +31,9 @@ class RecipeRepositoryImpl(
                 }.await()
             }
         }
+    }
+
+    override suspend fun getRecipeById(id: Int): Result<Recipe, DataError.Local> {
+        return localRecipeDataSource.getRecipeById(id)
     }
 }

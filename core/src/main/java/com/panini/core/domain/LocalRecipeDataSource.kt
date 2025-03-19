@@ -6,5 +6,6 @@ import kotlinx.coroutines.flow.Flow
 
 interface LocalRecipeDataSource {
     fun getRecipes(): Flow<List<Recipe>>
+    suspend fun getRecipeById(id: Int): Result<Recipe, DataError.Local>
     suspend fun upsertRecipes(recipes: List<Recipe>): Result<List<Int>, DataError.Local>
 }

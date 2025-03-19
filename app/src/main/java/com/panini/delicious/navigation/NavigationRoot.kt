@@ -6,7 +6,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navigation
-import androidx.navigation.toRoute
+import com.panini.core.presentation.navigation.Routes
 import com.panini.recipe_detail.presentation.RecipeDetailScreen
 import com.panini.recipe_list.presentation.RecipeListScreen
 
@@ -34,9 +34,8 @@ private fun NavGraphBuilder.recipeGraph(navController: NavHostController) {
             )
         }
         composable<Routes.RecipeDetails> {
-            val args = it.toRoute<Routes.RecipeDetails>()
             RecipeDetailScreen(
-                recipeId = args.recipeId
+                onNavigateBack = navController::popBackStack
             )
         }
     }

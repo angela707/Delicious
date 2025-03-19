@@ -1,12 +1,12 @@
-package com.panini.recipe_list.data.network
+package com.panini.core.data.remote
 
 import com.panini.core.data.networking.get
+import com.panini.core.data.util.toRecipe
 import com.panini.core.domain.Recipe
 import com.panini.core.domain.RemoteRecipeDataSource
 import com.panini.core.domain.util.DataError
 import com.panini.core.domain.util.Result
 import com.panini.core.domain.util.map
-import com.panini.recipe_list.data.utils.toRecipe
 import io.ktor.client.HttpClient
 
 class RemoteRecipeDataSourceImpl(

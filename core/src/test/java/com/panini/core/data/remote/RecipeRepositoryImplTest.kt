@@ -1,6 +1,7 @@
 package com.panini.core.data.remote
 
 import com.panini.core.data.AppBaseTest
+import com.panini.core.data.RecipeRepositoryImpl
 import com.panini.core.domain.LocalRecipeDataSource
 import com.panini.core.domain.Recipe
 import com.panini.core.domain.RemoteRecipeDataSource
@@ -24,7 +25,15 @@ class RecipeRepositoryImplTest : AppBaseTest() {
     private val remoteRecipeDataSource = mockk<RemoteRecipeDataSource>(relaxed = true)
 
     private val fakeRecipes = listOf(
-        Recipe(1, "Pancakes", "Good", 10, "thumb", "video", "2 servings")
+        Recipe(
+            id = 1,
+            name = "Pancakes",
+            description = "Good",
+            prepTimeMinutes = 10,
+            thumbnailUrl = "thumb",
+            videoUrl = "video",
+            yields = "2 servings"
+        )
     )
 
     @BeforeEach

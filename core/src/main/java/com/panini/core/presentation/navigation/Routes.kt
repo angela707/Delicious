@@ -1,4 +1,4 @@
-package com.panini.delicious.navigation
+package com.panini.core.presentation.navigation
 
 import kotlinx.serialization.Serializable
 

@@ -1,4 +1,4 @@
-package com.panini.recipe_list.data.network
+package com.panini.core.data.remote
 
 import kotlinx.serialization.Serializable
 

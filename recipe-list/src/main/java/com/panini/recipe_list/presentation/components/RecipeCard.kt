@@ -45,16 +45,15 @@ fun RecipeCard(
             modifier = Modifier
                 .fillMaxWidth()
         ) {
-            thumbnailUrl?.let { imageUrl ->
-                AsyncImage(
-                    model = imageUrl,
-                    contentDescription = null,
-                    error = painterResource(R.drawable.error_image),
-                    modifier = Modifier
-                        .fillMaxSize(),
-                    contentScale = ContentScale.Crop
-                )
-            }
+            AsyncImage(
+                model = thumbnailUrl,
+                contentDescription = null,
+                error = painterResource(com.panini.core.R.drawable.error_image),
+                modifier = Modifier
+                    .fillMaxSize(),
+                contentScale = ContentScale.Crop
+            )
+
             Box(
                 modifier = Modifier
                     .fillMaxSize()
@@ -81,7 +80,7 @@ fun RecipeCard(
 
                 if (prepTimeMinutes != null && prepTimeMinutes != 0) {
                     Text(
-                        text = stringResource(R.string.prep_time, prepTimeMinutes),
+                        text = stringResource(com.panini.core.R.string.prep_time, prepTimeMinutes),
                         color = MaterialTheme.colorScheme.onPrimary,
                         style = MaterialTheme.typography.bodyMedium
                     )
